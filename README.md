@@ -1,5 +1,5 @@
 # ReCO
-ReCO: A Large Scale Chinese Reading Comprehension Dataset on Opinion
+[ReCO: A Large Scale Chinese Reading Comprehension Dataset on Opinion](https://arxiv.org/abs/2006.12146)
 
 ## Data
 Dataset is available at https://drive.google.com/drive/folders/1rOAoKcLhMhge9uVQFM2_D1EU0AjnpWFa?usp=sharing
