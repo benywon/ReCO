@@ -1,16 +1,16 @@
 # ReCO
 ReCO: A Large Scale Chinese Reading Comprehension Dataset on Opinion
 
-##Data
+## Data
 Dataset is available at https://drive.google.com/drive/folders/1rOAoKcLhMhge9uVQFM2_D1EU0AjnpWFa?usp=sharing
 
 download the data and put the json files to the `data/ReCO` directory
-###Stats
+### Stats
 | Train | Dev |  Test-a | Test-b |
 | ------------- | ------------- |------------- |------------- |
 | 250,000  | 30,000  | 10,000  |10,000  |
 
-##Requirenments
+## Requirenments
 transformers
 torch>=1.3.0
 tqdm
@@ -19,7 +19,7 @@ apex(for mixed-precision training)
 ## Train and Test
 For BiDAF and other types of model, you can refers to our [ai-challenger](https://github.com/AIChallenger/AI_Challenger_2018/tree/master/Baselines/opinion_questions_machine_reading_comprehension2018_baseline) public code for more details.
 This code only contains the training script for Bert.  
-###Train
+### Train
 For single node training:  
 python3 train.py --model_type=bert-base-chinese  
 for multiple nodes distributed training:  
@@ -28,10 +28,10 @@ python3 -m torch.distributed.launch --nproc_per_node=8 train.py --model_type=ber
 model_type could be either `bert-base-chinese` (for Bert_base) or `clue/roberta_chinese_large` (for Bert_large)
 If you want to use the original doc as the context, you can set the `clean(one['passage'])` in prepare_data.py line 29 to `clean(one['doc'])`.
  
-###Test
+### Test
 python3 test.py --model_type=bert-base-chinese
 
-##Results
+## Results
 Doc level  
 
 | Model | Dev |  Test-a |
