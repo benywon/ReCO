@@ -43,6 +43,8 @@ If you want to use the original doc as the context, you can set the [`clean(one[
 `python3 test.py --model_type=bert-base-chinese`
 
 ## Results
+<center>
+
 Doc level  
 
 | Model | Dev |  Test-a |
@@ -63,6 +65,7 @@ Evidence level
 | [ALBert-base](https://huggingface.co/voidful/albert_chinese_base)  | 76.9  | 77.3  |
 | [ALBert-xxLarge](https://huggingface.co/voidful/albert_chinese_xxlarge)  | 80.8  | 81.2  |
 | Human  | --  | 91.5  |
+</center>
 
 
 ## Citation
