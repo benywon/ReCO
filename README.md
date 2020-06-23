@@ -11,11 +11,11 @@ download the data and put the json files to the `data/ReCO` directory
 | 250,000  | 30,000  | 10,000  |10,000  |
 
 ## Requirenments
-transformers
-torch>=1.3.0
-tqdm
-joblib
-apex(for mixed-precision training)
+transformers  
+torch>=1.3.0  
+tqdm  
+joblib  
+apex(for mixed-precision training)  
 ## Train and Test
 For BiDAF and other types of model, you can refers to our [ai-challenger](https://github.com/AIChallenger/AI_Challenger_2018/tree/master/Baselines/opinion_questions_machine_reading_comprehension2018_baseline) public code for more details.
 This code only contains the training script for Bert.  
