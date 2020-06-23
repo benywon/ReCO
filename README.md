@@ -21,15 +21,15 @@ For BiDAF and other types of model, you can refers to our [ai-challenger](https:
 This code only contains the training script for Bert.  
 ### Train
 For single node training:  
-python3 train.py --model_type=bert-base-chinese  
+`python3 train.py --model_type=bert-base-chinese`  
 for multiple nodes distributed training:  
-python3 -m torch.distributed.launch --nproc_per_node=8 train.py --model_type=bert-base-chinese  
+`python3 -m torch.distributed.launch --nproc_per_node=8 train.py --model_type=bert-base-chinese`  
 
-model_type could be either `bert-base-chinese` (for Bert_base) or `clue/roberta_chinese_large` (for Bert_large)
-If you want to use the original doc as the context, you can set the `clean(one['passage'])` in prepare_data.py line 29 to `clean(one['doc'])`.
+model_type could be either `bert-base-chinese` (for Bert_base) or `clue/roberta_chinese_large` (for Bert_large)  
+If you want to use the original doc as the context, you can set the [`clean(one['passage'])`](https://github.com/benywon/ReCO/blob/master/prepare_data.py#L29) in prepare_data.py line 29 to `clean(one['doc'])`.
  
 ### Test
-python3 test.py --model_type=bert-base-chinese
+`python3 test.py --model_type=bert-base-chinese`
 
 ## Results
 Doc level  
