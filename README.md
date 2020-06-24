@@ -17,9 +17,9 @@ tqdm
 joblib  
 apex(for mixed-precision training)  
 ## Train and Test
-For BiDAF and other types of model, you can refers to our [ai-challenger](https://github.com/AIChallenger/AI_Challenger_2018/tree/master/Baselines/opinion_questions_machine_reading_comprehension2018_baseline) public code for more details.
-This code only contains the training script for Bert.  
-### Train
+For BiDAF and other types of model, you can go to the `BiDAF` folder and run. But the result is somewhat low ~_~  
+
+### Pre-training methods finetuning: 
 For single node training:  
 `python3 train.py --model_type=bert-base-chinese`  
 for multiple nodes distributed training:  
